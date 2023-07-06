@@ -1,0 +1,61 @@
+.container{
+    display: flex;
+   flex:1;
+}
+.section{
+    display: flex;
+    gap: 25px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width:320px;
+    height:380px;
+    background-color: aquamarine;
+}
+
+
+.card__img{
+    font-weight: blod;
+}
+.card__img a{
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+}
+.card__img a:hover{
+    color: #000;
+    font-size: 50px;
+}
+.card__img a img{
+    width: 320px;
+    height:260px
+}
+
+.card__title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.card__title--price{
+    color: #000;
+    font-size: 1rem;
+
+}
+.card__title--btn button{
+    border-radius: 50px;
+    margin-top: 15px;
+}
+@media(min-width:367){
+    .container {
+        flex-direction: column;
+    }
+    
+    .card{
+        max-width:100% ;
+        margin:5px;
+    }
+}
